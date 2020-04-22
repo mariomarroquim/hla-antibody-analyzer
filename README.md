@@ -10,12 +10,14 @@ This is an offline app developed to perform state-of-art in silico antibody anal
 TODO
 -----
 
-* 1 - Create automated tests.
-* 2 - Group HLA alleles by locus
-* 3 - Group HLA alleles by their 2-digit resolution.
-* 4 - Create charts to display the panel data.
-* 5 - Perform cluster analysis on MFI values.
-* 6 - Display MFI cutoff suggestions based on [This research paper](https://journals.lww.com/transplantjournal/Fulltext/2019/04000/Toward_a_Sensible_Single_antigen_Bead_Cutoff_Based.30.aspx).
+* Create automated tests (in progress).
+* Group HLA alleles by locus.
+* Group HLA alleles by their 2-digit resolution.
+* Create charts to display the panel data.
+* Perform cluster analysis on MFI values.
+* Display MFI cutoff suggestions based on [this research paper](https://journals.lww.com/transplantjournal/Fulltext/2019/04000/Toward_a_Sensible_Single_antigen_Bead_Cutoff_Based.30.aspx).
+* Perform virtual crossmatching based on the donor's HLA typing.
+* Add a print option.
 
 Support
 -------
