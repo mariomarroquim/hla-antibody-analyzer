@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';"/>
+    <meta http-equiv="X-Content-Security-Policy" content="script-src 'self' 'unsafe-inline';"/>
+    <title>HLA Antibody Analyzer</title>
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./node_modules/datatables.net-bs4/css/dataTables.bootstrap4.min.css"/>
+    <link rel="stylesheet" href="./style.css"/>
+
+    <script src="./index.js" defer async></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark text-white bg-info fixed-top">
+      <a class="navbar-brand" href="index.html">HLA Antibody Analyzer</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Analysis</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main" class="container" id="main">
+      <h4>Single Antigen reactivity panel analysis</h4>
+      <br/>
+
+      <div class="card border-info">
+        <h5 class="card-header">Step 1: Import a panel</h5>
+
+        <div class="card-body">
+          <input type="file"
+                 class="form-control-file"
+                 accept=".ods, .xls, .xlsx, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"
+                 id="panel_file"/>
+
+          <small id="passwordHelpBlock" class="form-text text-muted">
+            Electronic spreadsheet with two columns: HLA allele and MFI. Please, leave them unformatted.
+          </small>
+
+          <small id="passwordHelpBlock" class="form-text text-muted">
+            Pro tip: Yes, you can copy-and-paste this data from HLA Fusion&reg; or MatchIT&reg; reports!
+          </small>
+        </div>
+      </div>
+
+      <div class="card border-info" style="display: none;" id="results">
+        <h5 class="card-header">Step 2: Explore the analysis results</h5>
+
+        <div class="card-body">
+          <div class="row" id="panel_options">
+            <div class="col-sm clearfix">
+              <form action="#" class="form-inline" id="panel_filter_form">
+                Filter
+                &nbsp;&nbsp;
+                <input type="text" class="form-control" id="panel_filter"/>
+                &nbsp;&nbsp;
+                <button type="submit" class="btn btn-primary">Apply</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="table-responsive">
+            <table class="table table-hover" id="panel_table">
+              <thead>
+                <tr>
+                  <th scope="col" width="30%">HLA allele</th>
+                  <th scope="col" width="70%">MFI</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="container">
+      <p class="text-muted">© Mário Marroquim 2020 | <a href="mailto: mariomarroquim@gmail.com">mariomarroquim@gmail.com</a></p>
+    </footer>
+  </body>
+</html>

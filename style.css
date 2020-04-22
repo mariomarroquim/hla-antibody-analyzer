@@ -1,0 +1,28 @@
+:focus, :active {
+  outline: 0;
+}
+
+.dataTables_filter {
+  display: none;
+}
+
+body {
+  padding-top: 5rem;
+}
+
+#main {
+  min-height: 378px;
+}
+
+#results, footer {
+  margin-top: 20px;
+}
+
+footer {
+  border-top: 1px solid #ccc;
+  padding-top: 16px;
+}
+
+#panel_options {
+  margin-bottom: 16px;
+}
