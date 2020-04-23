@@ -1,16 +1,17 @@
 HLA Antibody Analyzer
 =====================
 
-Offline app for importing Single Antigen reactivity panels and performing automatic HLA antibody analysis.
+App for importing Single Antigen reactivity panels and performing automatic HLA antibody analysis.
 
 Description
 -----------
-This is an offline app developed to perform state-of-art in silico antibody analysis of Single Antigen reactivity panels belonging to patients waiting for a solid organ transplant. These panels are obtained by histocompatibility laboratories and their analysis enables immunologists to better choose the most immunologically compatible donor-recipient pairs for transplantation.
+This is an Electron app developed to perform state-of-art in silico antibody analysis of Single Antigen reactivity panels belonging to patients waiting for a solid organ transplant. These panels are obtained by histocompatibility laboratories and their analysis enables immunologists to better choose the most immunologically compatible donor-recipient pairs for transplantation.
 
 TODO
 -----
 
 * Create automated tests (in progress).
+* Improve CSS with the [BEM methodology](http://getbem.com).
 * Group HLA alleles by locus.
 * Group HLA alleles by their 2-digit resolution.
 * Create charts to display the panel data.
